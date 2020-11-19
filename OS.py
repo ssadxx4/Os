@@ -31,7 +31,7 @@ class ConsumerThread(threading.Thread):
             if a == req:
                 t1 = time.time()
                 fsd = req/(t1-t0)
-                print('\nSuccessfully consumed ',a, 'requests',(a*100)/req,'%')
+                print('\nSuccessfully consumed ',a, 'requests','(',(a*100)/req,'%)')
                 print('Elapsed Time: %.2f'%(t1-t0),'s')
                 print(f'Throughput: {fsd:.2f}','successful requests/s' )
                 break
